@@ -1,0 +1,166 @@
+    .followButton, .unfollowButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: min(0.8vw,3.2px);
+        color: white;
+        font-size: min(4vw,16px);
+
+        width:34vw;
+        max-width: 216px;
+        height: min(10vw,40px);
+
+        margin-right: min(2vw,8px);
+        cursor: pointer;
+    }
+    .followButton{
+        background-color: #3da1ff;
+    }
+    .unfollowButton{
+        background-color: #a91313;
+    }
+
+@media screen and (max-width: 480px){
+    .contentWrapper{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: min(3vw,12px);
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border: min(0.3vw,1.2px) solid rgb(232, 235, 237);
+
+    
+        border-radius: min(1vw,4px);
+    
+        box-sizing: border-box;
+        padding: min(7vw,28px);
+        margin-left: min(7.48vw, 32px);
+        margin-right: min(7.48vw, 32px);
+    
+    }
+    .name{
+        font-family: "Swansea";
+        font-weight: bold;
+        line-height:min(7vw,28px);
+        font-size:min(5vw,20px);
+        color:#383838;
+    
+        margin-bottom: min(3vw,12px);
+    }
+    .tags{
+        font-family: 'Noto Sans SC', sans-serif;
+        font-size: min(4vw,16px);
+        color:#3da1ff;
+        margin-bottom: min(3.5vw,14px);
+    }
+    .location{
+        font-family: 'Lato', sans-serif;
+        font-size: min(4vw,16px);
+        font-weight: 400;
+        margin-bottom: min(5vw,20px);
+        color:#505050;
+    
+    
+    
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+    }
+    .followButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #3da1ff;
+        border-radius: min(0.8vw,3.2px);
+        color: white;
+        font-size: min(4vw,16px);
+    
+        width:34vw;
+        height: min(10vw,40px);
+    
+        margin-right: min(2vw,8px);
+    }
+    .mapButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width:34vw;
+        height:min(10vw,40px);
+        font-size: min(4vw,16px);
+        color:#404040;
+        border: min(0.3vw,1.2px) solid #404040;
+        border-radius: min(0.8vw,3.2px);
+    }
+}
+
+@media screen and (min-width: 480px){
+    .contentWrapper{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: min(3vw,12px);
+        width: calc(50vw + 130px);
+        max-width: 515px;     
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width:100%;
+        border: min(0.3vw,1.2px) solid rgb(232, 235, 237);
+
+    
+        border-radius: min(1vw,4px);
+    
+        box-sizing: border-box;
+        padding: min(7vw,28px);
+    
+    }
+    .name{
+        font-family: "Swansea";
+        font-weight: bold;
+        line-height:min(7vw,28px);
+        font-size:min(5vw,20px);
+        color:#383838;
+    
+        margin-bottom: min(3vw,12px);
+    }
+    .tags{
+        font-family: 'Noto Sans SC', sans-serif;
+        font-size: min(4vw,16px);
+        color:#3da1ff;
+        margin-bottom: min(3.5vw,14px);
+    }
+    .location{
+        font-family: 'Lato', sans-serif;
+        font-size: min(4vw,16px);
+        font-weight: 400;
+        margin-bottom: min(5vw,20px);
+        color:#505050;
+    
+    
+    
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mapButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width:34vw;
+        max-width: 216px;
+        height:min(10vw,40px);
+        font-size: min(4vw,16px);
+        color:#404040;
+        border: min(0.3vw,1.2px) solid #404040;
+        border-radius: min(0.8vw,3.2px);
+    }
+}

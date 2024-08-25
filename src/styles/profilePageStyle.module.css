@@ -1,0 +1,103 @@
+@media screen and (min-width: 480px){
+    .content{
+        display: flex;
+        flex:1;
+        flex-direction: column;
+        box-sizing: border-box;
+        align-items: center;
+        width: calc(50vw + 130px);
+        margin-top: 30px;
+    }
+    .userInfo{
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .profileImageWrapper{
+        border: 2px solid rgb(255, 255, 255);
+        width: 80px;
+        height: 80px;
+        border-radius: 10vw;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.44);
+    
+    }
+    .profileImage{
+        width: 80px;
+        height: 80px;
+        border-radius: 10vw;
+    }
+    .name{
+        
+        margin-top: 20px;
+        font-size: 24px;
+        font-weight:bold;
+    }
+    .description{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    
+        font-weight: normal;
+    }
+    .posts{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        align-items: center;
+        width: 100%;
+    }
+    .userInfo{
+        box-sizing: border-box;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .profileImageWrapper{
+        border: 2px solid rgb(255, 255, 255);
+        width: 80px;
+        height: 80px;
+        border-radius: 10vw;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.44);
+    
+    }
+    .profileImage{
+        width: 80px;
+        height: 80px;
+        border-radius: 10vw;
+    }
+    .name{
+        
+        margin-top: 20px;
+        font-size: 24px;
+        font-weight:bold;
+    }
+    .description{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        font-size: 16px;
+    
+        font-weight: normal;
+    }
+    .posts{
+        width: 100%;
+    }
+}

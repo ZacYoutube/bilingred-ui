@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Swansea';
+    src: url('./Swansea/SwanseaBold.eot'); /* IE9 Compat Modes */
+    src: url('./Swansea/SwanseaBold.woff') format('woff'), /* Modern Browsers */
+     url('./Swansea/SwanseaBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('./Swansea/SwanseaBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+     unicode-range: U+0000-007F;
+     font-weight: bold;
+     font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Swansea';
+    src: url('./Swansea/Swansea.eot'); /* IE9 Compat Modes */
+    src: url('./Swansea/Swansea.woff') format('woff'), /* Modern Browsers */
+     url('./Swansea/Swansea.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('./Swansea/Swansea.svg#svgFontName') format('svg'); /* Legacy iOS */
+     unicode-range: U+0000-007F;
+     font-weight: normal;
+     font-style: normal;
+  }

@@ -1,0 +1,299 @@
+@media screen and (max-width: 480px){
+    .content{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 900px){
+.menuItemText{
+    display: none;
+}
+.publishStretched{
+    display: none;
+}
+.inactive:hover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 8px solid rgb(255, 255, 255);
+    width: 72px;
+    height: 72px;
+    border-radius: 8vw;
+    overflow: visible;
+    background-color: rgb(244, 247, 248);
+    animation: appear 0.2s;
+}
+.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 8px solid rgb(255, 255, 255);
+    width: 72px;
+    height: 72px;
+    border-radius: 8vw;
+    overflow: visible;
+    background-color: rgb(244, 247, 248);
+    animation: appear 0.2s;
+}
+
+@keyframes appear{
+    from{
+        background-color: rgb(247, 249, 250,0);
+    }to{
+        background-color: rgb(247, 249, 250);
+    }
+}
+.content{
+    position: sticky;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: min(66px,calc(50vw - 235px));
+    max-width: 157px;
+    padding-top: 10px;
+    width: calc(50vw - 160px);
+    height: 100vh;
+    min-width: 80px;
+    /* box-shadow: 2px 0 3px rgba(228, 228, 228, 0.407); */
+    border-right: min(0.3vw, 1.2px) solid rgb(245, 247, 248);
+    background-color: white;
+}
+.profileImageWrapper{
+    overflow: hidden;
+}
+.profileImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 12vw;
+    margin-bottom: 20px;
+
+}
+.collectionItems{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+
+    width: 72px;
+    height: 72px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.commonMenuItems{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+
+    width: 72px;
+    height: 72px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.location{
+    width: 32px;
+    height: 32px;
+}
+.explore{
+    padding: 4px;
+    width: 28px;
+    height: 28px;
+}
+.plus{
+    margin-top: 20px;
+
+    width: 36px;
+    height: 36px;
+}
+
+.logoutWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 80px;
+    width: 30px;
+    height: 30px;
+}
+.logout{
+    width: 32px;
+    height: 32px;
+}
+}
+@media screen and (min-width: 901px){
+    .collectionItems{
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        align-items: center;
+        height: 72px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .menuItemText{
+        display: flex;
+        font-size: 18px;
+        margin-left: 10px;
+        color: #2B2B2B;
+    }
+    .publishWrapper{
+        display: flex;
+        width: 100%;
+    }
+    .publishStretched{
+        display: flex;
+        height: 56px;
+        width: 100%;
+    }
+    .publishArchor{
+        /* padding-left: 35px; */
+
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        height: 56px;
+        width: calc(100% - 80px);
+        margin-right: 10px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .inactive{
+        display: flex;
+        width: 100%;
+        padding-left: 60px;
+        align-items: center;
+        box-sizing: border-box;
+
+    }
+    .inactive:hover{
+        padding-left: 35px;
+
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        height: 56px;
+        width: calc(100% - 60px);
+        margin-right: 10px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+
+        background-color: rgb(247, 249, 250);
+        border-radius: 50px;
+        animation: 0.2s appear;
+    }
+    .active{
+        padding-left: 35px;
+
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        height: 56px;
+        width: calc(100% - 60px);
+        margin-right: 10px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+
+        background-color: rgb(247, 249, 250);
+        border-radius: 50px;
+        animation: 0.2s appear;
+    }
+    
+    @keyframes appear{
+        from{
+            background-color: rgb(247, 249, 250,0);
+        }to{
+            background-color: rgb(247, 249, 250);
+        }
+    }
+    .content{
+        position: sticky;
+        top:0;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        align-items:center;
+        box-sizing: border-box;
+        /* padding-right: 150px; */
+        width: 250px;
+        padding-top: 10px;
+        height: 100vh;
+        min-width: 80px;
+        border-right: min(0.3vw, 1.2px) solid rgb(245, 247, 248);
+        background-color: white;
+    }
+    .profileArchor{
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        align-items: center;
+        padding-left: 60px;
+        width: 100%;
+    }
+    .profileImageWrapper{
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        align-items: center;
+        width: 100%;
+
+        overflow: hidden;
+    }
+    .profileImage{
+        
+        width: 50px;
+        height: 50px;
+        border-radius: 12vw;
+        margin-bottom: 20px;
+    
+    }
+    .commonMenuItems{
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        align-items: center;
+        height: 72px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .location{
+        width: 32px;
+        height: 32px;
+    }
+    .explore{
+        padding: 4px;
+        width: 28px;
+        height: 28px;
+    }
+    .plus{    
+        display: none;
+        width: 36px;
+        height: 36px;
+    }
+    
+    .logoutWrapper{
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        align-items: center;
+        height: 72px;
+        padding-left: 60px;
+        padding-top: 20px;
+        width: 100%;
+        padding-bottom: 20px;
+        margin-top: 80px;
+    }
+    .logout{
+        width: 32px;
+        height: 32px;
+    }
+}

@@ -1,0 +1,97 @@
+@media screen and (min-width: 480px){
+    .contentWrapper{
+        display: none;
+    }
+}
+@media screen and (max-width: 480px){
+.contentWrapper{
+    display: flex;
+    position:fixed;
+    bottom: 0;    
+    width: 100vw;
+    flex-direction: row;
+    height: calc(40% - 26vh);
+    max-height:95px;
+    background-color: white;
+    align-items: flex-start;
+    z-index: 99;
+    animation: topDown 0.3s;
+}
+.active{
+    background-color: rgb(244, 247, 248);
+    width: min(20vw,75px);
+    height: min(11vw,41.25px);
+    border-radius: 9vw;
+    animation: appear 0.2s;
+}
+
+@keyframes appear{
+    from{
+        background-color: rgb(247, 249, 250,0);
+    }to{
+        background-color: rgb(247, 249, 250);
+    }
+}
+@keyframes topDown{
+    from{
+        transform: translate(0, 10vw);
+    }to{
+    }
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: min(2vw,7.5px);
+    border-top: 0.5vw solid #F9FAFB;
+}
+.locationWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: min(20vw,75px);
+    height: min(11vw,41.25px);
+    border-radius: 9vw;
+    padding-top:min(1.6vw,6.4px);
+    padding-bottom:min(1.6vw,6.4px); 
+    /* padding-left:min(6vw,24px);
+    padding-right:min(6vw,24px); */
+}
+.location{
+    width: min(7vw,26.25px);
+    height: min(7vw,26.25px);
+}
+.publishWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8vw;
+    /* background-color:#4FAEF9; */
+    /* width: 40px; */
+    /* height: 40px; */
+    /* width: min(10vw,37.5px); */
+    /* height: min(10vw,37.5px); */
+}
+.publish{
+    width: min(8vw,32px);
+    height: min(8vw,32px);
+}
+.exploreWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 9vw;
+    width: min(20vw,75px);
+    height: min(11vw,41.25px);
+    padding-top:min(1.6vw,6.4px);
+    padding-bottom:min(1.6vw,6.4px); 
+
+}
+.explore{
+    width: min(6vw,22.5px);
+    height: min(6vw,22.5px);
+}
+}

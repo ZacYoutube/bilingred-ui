@@ -1,0 +1,232 @@
+@media screen and (max-width: 480px){
+
+    .contentWrapper{
+        top: 0;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        width: 100%;
+        height: min(16vw,64px);    
+        background-color: rgb(255, 255, 255);
+        z-index: 10;
+        border-bottom-left-radius: min(3vw, 15px);
+        border-bottom-right-radius: min(3vw,15px);
+
+        border-bottom: min(0.3vw, 1.2px) solid rgb(245, 247, 248);
+
+
+        animation: topDown 0.3s;
+    }
+
+    @keyframes topDown{
+        from{
+            transform: translate(0, -10vw);
+        }to{
+        }
+    }
+    .content{
+        height:100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left:min(5.8vw,23.2px);
+        box-sizing: border-box;    
+        padding-bottom: 0vw;
+    }
+    .searchBarWrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: min(10vw,40px);
+        margin-left: min(2.5vw,10px);
+        margin-right: min(2.5vw,10px);
+        background-color: rgb(244, 246, 248);
+        border-radius:min(7vw,28px);
+    }
+    .searchBar{
+        width: calc(70vw - 57px);
+        border:none;
+        outline:none;
+        padding:none;
+        margin:none;
+        background: transparent;
+    }
+    .searchBar::placeholder{
+        font-size:min(3.5vw,14px);
+    }
+    .searchButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: min(5vw,20px);
+        margin-right: min(2vw,8px);
+        padding-bottom: min(0.2vw, 0.8px)
+    }
+    
+    .searchIcon{
+        width: min(4.2vw,16.8px);
+        height: min(4.2vw,16.8px);
+    }
+    
+    .profileImageWrapper{
+        display: flex;
+        width: min(10vw,40px);
+        height: min(10vw,40px);
+        border-radius: 12vw;
+        overflow: hidden;
+    }
+    
+    .profileImage{
+        width: min(10vw,40px);
+        height: min(10vw,40px);
+    }
+    .starArchor{
+        display: flex;
+        margin-left:auto;
+    }
+    .starWrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 4.8vw;
+
+    }
+    .star{
+        width: min(7vw,28px);
+        height: min(7vw,28px);
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 900px){
+
+    .contentWrapper{
+        width: 100%;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        height: min(16vw,64px);    
+        background-color: rgb(255, 255, 255);
+        z-index: 10;
+        border-bottom: min(0.3vw, 1.2px) solid rgb(245, 247, 248);
+
+    }
+    .content{
+        width: calc(50vw + 133px);
+        max-width: 510px;
+
+        height:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding-bottom: 0vw;
+    }
+    .searchBarWrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        /* max-width: 432px; */
+        height: min(10vw,40px);
+        background-color: rgb(244, 246, 248);
+        border-radius:min(7vw,28px);
+    }
+    .searchBar{
+        width: 100%;
+        border:none;
+        outline:none;
+        padding:none;
+        margin:none;
+        background: transparent;
+    }
+    .searchBar::placeholder{
+        font-size:min(3.5vw,14px);
+    }
+    .searchButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: min(5vw,20px);
+        margin-right: min(4vw,16px);
+    }
+    .searchIcon{
+        width: min(4.2vw,16.8px);
+        height: min(4.2vw,16.8px);
+    }
+    .profileImageWrapper{
+        display: none;
+    }
+    .starWrapper{
+        display: none;
+    }
+}
+@media screen and (min-width: 901px){
+
+
+    .contentWrapper{
+        width: 100%;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        height: min(16vw,64px);    
+        background-color: rgb(255, 255, 255);
+        z-index: 10;
+        border-bottom: min(0.3vw, 1.2px) solid rgb(245, 247, 248);
+
+    }
+    .content{
+        width: calc(50vw + 133px);
+        max-width: 510px;
+
+        height:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding-bottom: 0vw;
+    }
+    .searchBarWrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        /* max-width: 432px; */
+        height: min(10vw,40px);
+        background-color: rgb(244, 246, 248);
+        border-radius:min(7vw,28px);
+    }
+    .searchBar{
+        width: 100%;
+        border:none;
+        outline:none;
+        padding:none;
+        margin:none;
+        background: transparent;
+    }
+    .searchBar::placeholder{
+        font-size:min(3.5vw,14px);
+    }
+    .searchButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: min(5vw,20px);
+        margin-right: min(4vw,16px);
+    }
+    .searchIcon{
+        width: min(4.2vw,16.8px);
+        height: min(4.2vw,16.8px);
+    }
+    .profileImageWrapper{
+        display: none;
+    }
+    .starWrapper{
+        display: none;
+    }
+
+}

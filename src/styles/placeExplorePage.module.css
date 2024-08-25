@@ -1,0 +1,526 @@
+@media screen and (max-width: 480px){
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        width:100vw;
+        
+    }
+    
+    .header{
+        top:0;
+        position: sticky;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-sizing: border-box;
+        height:min(16vw,64px);
+        width:100%;
+        border-bottom-left-radius: min(3vw, 15px);
+        border-bottom-right-radius: min(3vw,15px);
+
+        border-bottom: min(0.3vw, 1.2px) solid rgb(245, 247, 248);
+    
+        padding-top: min(3vw,12px);
+        padding-bottom: min(3vw,12px);
+    
+        padding-left: min(5vw,20px);
+    
+        border-radius: min(2vw,8px);
+    
+        margin-bottom: min(6vw,24px);
+    
+        z-index: 5;
+        background-color: white;
+    
+       animation: topDown 0.3s;
+    }
+
+    @keyframes topDown{
+        from{
+            transform: translate(0, -10vw);
+        }to{
+        }
+    }
+    
+    .search{
+        display: flex;
+        width: 77vw;
+        align-items: center;
+        flex-direction: row;
+        border: min(0.5vw,2px) solid #2973FF;
+        box-sizing: border-box;
+        margin-right:min(4vw,16px);
+    
+        border-radius: 6vw;
+    
+        height: min(10vw,40px);
+        
+    }
+    
+    .searchIconWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .searchIcon{
+        width: min(4.32vw,17.28px);
+        height: min(4.32vw,17.28px);
+        margin-left: min(4vw,16px);
+        margin-right: min(2.7vw,10.8px);
+    
+    
+    }
+    
+    .searchInput{
+        font-size: min(3.6vw,14.4px);
+        outline:none;
+        background:transparent;
+        border:none;
+    }
+    
+    .searchInput::placeholder{
+        color:#8D94A7;
+        font-size: min(3.6vw,14.4px);
+    
+    }
+    
+    .followedPlacesIconWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .followedPlacesIcon{
+        width: min(7.5vw,30px);
+        height: min(8vw,32px);
+    }
+    
+    .padWrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .pad{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* box-shadow: 0 0 min(2vw,8px) rgb(198, 198, 198); */
+
+        border: min(0.3vw,1.2px) solid rgb(232, 235, 237);
+    
+        border-radius: 1vw;
+    
+        box-sizing: border-box;
+        margin-left: min(7.48vw, 32px);
+        margin-right: min(7.48vw, 32px);
+    
+        padding: min(7vw,28px);
+    }
+    .slogan{
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight: bold;
+        line-height:min(7vw,28px);
+        font-size:min(5vw,20px);
+        color:#383838;
+    
+        margin-bottom: min(3vw,12px);
+    }
+    .text{
+        font-family: 'Noto Sans SC', sans-serif;
+        font-size: min(4vw,16px);
+        font-weight: 400;
+        margin-bottom: min(5vw,20px);
+        color:#505050;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+    }
+    .filterButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #343434;
+        border-radius: min(0.8vw,3.2px);
+        color: white;
+        font-size: min(4vw,16px);
+        font-family: 'Noto Sans SC', sans-serif;
+    
+        width:34vw;
+        height: min(10vw,40px);
+    
+        margin-right: min(2vw,8px);
+    }
+    .createButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width:34vw;
+        height: min(10vw,40px);
+        font-size: min(4vw,16px);
+        font-family: 'Noto Sans SC', sans-serif;
+        color:#404040;
+        border: min(0.3vw,1.2px) solid #404040;
+        border-radius: min(0.8vw,3.2px);
+    }
+    .newestPlaces{
+        font-size: min(5vw,20px);
+        font-weight: bold;
+        color: rgb(45, 45, 45);
+    
+        margin-left: min(7.48vw, 32px);
+        margin-right: min(7.48vw, 32px);    
+        margin-top: min(7vw,28px);
+        margin-bottom: min(4vw,16px);
+        font-family: 'Noto Sans SC', sans-serif;
+    
+    }
+    }
+    
+    @media screen and (min-width: 480px) and (max-width: 900px){
+    
+        .content{
+            padding-bottom: 5px;
+            display: flex;
+            align-items: center;
+            flex: 1;
+            max-width: 600px;
+            flex-direction: column;
+            box-sizing: border-box;
+            border-radius: 15px;
+            border-right: min(0.3vw, 1.2px) solid rgb(244, 247, 248);
+
+        }
+        
+        .header{
+            top:0;
+            position: sticky;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            height:min(16vw,64px);
+            border-bottom: min(0.3vw, 1.2px) solid rgb(245, 247, 248);
+
+            width: 100%;
+            /* box-shadow: 0 min(1vw,4px) min(1vw,4px) rgba(0, 0, 0, 0.063); */
+    
+            padding-top: min(3vw,12px);
+            padding-bottom: min(3vw,12px);
+        
+            padding-left: min(5vw,20px);
+            
+            margin-bottom: min(6vw,24px);
+        
+            z-index: 50;
+            background-color: white;
+        
+        }
+        
+        .search{
+            display: flex;
+            width: 100%;
+            max-width: 515px;
+            align-items: center;
+            flex-direction: row;
+            border: min(0.5vw,2px) solid #2973FF;
+            box-sizing: border-box;
+            margin-right:min(4vw,16px);
+        
+            border-radius: 6vw;
+        
+            height: min(10vw,40px);
+            
+        }
+        
+        .searchIconWrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .searchIcon{
+            width: min(4.32vw,17.28px);
+            height: min(4.32vw,17.28px);
+            margin-left: min(7vw,28px);
+            margin-right: min(2.7vw,10.8px);
+        
+        
+        }
+        
+        .searchInput{
+            font-size: min(3.6vw,14.4px);
+            outline:none;
+            background:transparent;
+            border:none;
+        }
+        
+        .searchInput::placeholder{
+            color:#8D94A7;
+            font-size: min(3.6vw,14.4px);
+        
+        }
+        
+        .followedPlacesIconWrapper{
+            display: none;
+        }
+        
+        .padWrapper{
+            display: flex;
+            flex-direction: column;
+            width: calc(50vw + 130px);
+            max-width: 515px;        
+        }
+        .pad{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            /* box-shadow: 0 0 min(2vw,8px) rgb(198, 198, 198); */
+            border: min(0.3vw,1.2px) solid rgb(232, 235, 237);
+        
+            border-radius: 1vw;
+        
+            box-sizing: border-box;
+        
+            padding: min(7vw,28px);
+        }
+        .slogan{
+            font-family: 'Noto Sans SC', sans-serif;
+            font-weight: bold;
+            line-height:min(7vw,28px);
+            font-size:min(5vw,20px);
+            color:#383838;
+        
+            margin-bottom: min(3vw,12px);
+        }
+        .text{
+            font-family: 'Noto Sans SC', sans-serif;
+            font-size: min(4vw,16px);
+            font-weight: 400;
+            margin-bottom: min(5vw,20px);
+            color:#505050;
+        }
+        .buttons{
+            display: flex;
+            flex-direction: row;
+        }
+        .filterButton{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #343434;
+            border-radius: min(0.8vw,3.2px);
+            color: white;
+            font-size: min(4vw,16px);
+            font-family: 'Noto Sans SC', sans-serif;
+        
+            width:34vw;
+            max-width: 216px;
+            height: min(10vw,40px);
+        
+            margin-right: min(2vw,8px);
+        }
+        .createButton{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            width:34vw;
+            max-width: 216px;
+            height: min(10vw,40px);
+            font-size: min(4vw,16px);
+            font-family: 'Noto Sans SC', sans-serif;
+            color:#404040;
+            border: min(0.3vw,1.2px) solid #404040;
+            border-radius: min(0.8vw,3.2px);
+        }
+        .newestPlaces{
+            width: calc(50vw + 130px);
+            max-width: 515px;        
+            font-size: min(5vw,20px);
+            font-weight: bold;
+            color: rgb(45, 45, 45);
+        
+            margin-top: min(7vw,28px);
+            margin-bottom: min(4vw,16px);
+            font-family: 'Noto Sans SC', sans-serif;
+        
+        }
+    
+    }
+    @media screen and (min-width: 901px){
+        .content{
+            padding-bottom: 5px;
+            display: flex;
+            align-items: center;
+            flex: 1;
+            max-width: 600px;
+            flex-direction: column;
+            box-sizing: border-box;
+            border-radius: 15px;
+            border-right: min(0.3vw, 1.2px) solid rgb(244, 247, 248);
+
+        }
+        
+        .header{
+            top:0;
+            position: sticky;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            height:min(16vw,64px);
+            border-bottom: min(0.3vw, 1.2px) solid rgb(245, 247, 248);
+
+            width: 100%;
+            /* box-shadow: 0 min(1vw,4px) min(1vw,4px) rgba(0, 0, 0, 0.063); */
+    
+            padding-top: min(3vw,12px);
+            padding-bottom: min(3vw,12px);
+            padding-left: 42px;
+            padding-right: 42px;
+        
+            
+            margin-bottom: min(6vw,24px);
+        
+            z-index: 50;
+            background-color: white;
+        
+        }
+        
+        .search{
+            display: flex;
+            width: 100%;
+            /* max-width: 429px; */
+            align-items: center;
+            flex-direction: row;
+            border: min(0.5vw,2px) solid #2973FF;
+            box-sizing: border-box;
+        
+            border-radius: 6vw;
+        
+            height: min(10vw,40px);
+            
+        }
+        
+        .searchIconWrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .searchIcon{
+            width: min(4.32vw,17.28px);
+            height: min(4.32vw,17.28px);
+            margin-left: min(4vw,16px);
+            margin-right: min(2.7vw,10.8px);
+        
+        
+        }
+        
+        .searchInput{
+            font-size: min(3.6vw,14.4px);
+            outline:none;
+            background:transparent;
+            border:none;
+        }
+        
+        .searchInput::placeholder{
+            color:#8D94A7;
+            font-size: min(3.6vw,14.4px);
+        
+        }
+        
+        .followedPlacesIconWrapper{
+            display: none;
+
+        }
+
+        .padWrapper{
+            display: flex;
+            flex-direction: column;
+            width: calc(50vw + 130px);
+            max-width: 515px;        
+        }
+        .pad{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            /* box-shadow: 0 0 min(2vw,8px) rgb(198, 198, 198); */
+            border: min(0.3vw,1.2px) solid rgb(232, 235, 237);
+        
+            border-radius: 1vw;
+        
+            box-sizing: border-box;
+        
+            padding: min(7vw,28px);
+        }
+        .slogan{
+            font-family: 'Noto Sans SC', sans-serif;
+            font-weight: bold;
+            line-height:min(7vw,28px);
+            font-size:min(5vw,20px);
+            color:#383838;
+        
+            margin-bottom: min(3vw,12px);
+        }
+        .text{
+            font-family: 'Noto Sans SC', sans-serif;
+            font-size: min(4vw,16px);
+            font-weight: 400;
+            margin-bottom: min(5vw,20px);
+            color:#505050;
+        }
+        .buttons{
+            display: flex;
+            flex-direction: row;
+        }
+        .filterButton{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #343434;
+            border-radius: min(0.8vw,3.2px);
+            color: white;
+            font-size: min(4vw,16px);
+            font-family: 'Noto Sans SC', sans-serif;
+        
+            width:34vw;
+            max-width: 216px;
+            height: min(10vw,40px);
+        
+            margin-right: min(2vw,8px);
+        }
+        .createButton{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            width:34vw;
+            max-width: 216px;
+            height: min(10vw,40px);
+            font-size: min(4vw,16px);
+            font-family: 'Noto Sans SC', sans-serif;
+            color:#404040;
+            border: min(0.3vw,1.2px) solid #404040;
+            border-radius: min(0.8vw,3.2px);
+        }
+        .newestPlaces{
+            width: calc(50vw + 130px);
+            max-width: 515px;        
+            font-size: min(5vw,20px);
+            font-weight: bold;
+            color: rgb(45, 45, 45);
+        
+            margin-top: min(7vw,28px);
+            margin-bottom: min(4vw,16px);
+            font-family: 'Noto Sans SC', sans-serif;
+        
+        }
+    }

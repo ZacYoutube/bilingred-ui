@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88.426" height="23.857" viewBox="0 0 88.426 23.857">
+  <g id="publishStretched" transform="translate(-327 -335.857)">
+    <g id="comment_1_" data-name="comment (1)" transform="translate(327.999 337.001)">
+      <path id="Path_248" data-name="Path 248" d="M86.427,10.051C86.047,4.51,81.366-.144,74.842-.144c-.094-.008-62.922.1-63.327.12C4.983.221-.133,5.15,0,11.067S5.479,21.715,12.017,21.712l63.63-.116h5.28a5.266,5.266,0,0,0,5.5-4.979V10.136Z" fill="#4faef9" stroke="#4faef9" stroke-width="2"/>
+      <line id="Line_73" data-name="Line 73" x2="4" transform="translate(20 8.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <line id="Line_74" data-name="Line 74" x2="8" transform="translate(20 13.499)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    </g>
+    <text id="发布" transform="translate(365 352)" fill="#fff" font-size="10" font-family="PingFangSC-Semibold, PingFang SC" font-weight="600"><tspan x="0" y="0">发布</tspan></text>
+  </g>
+</svg>

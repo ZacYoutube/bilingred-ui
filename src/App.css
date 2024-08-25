@@ -1,0 +1,132 @@
+/* !! Global Styles !! */
+
+  a{
+    text-decoration: none;  
+    touch-action: manipulation; /* Remove 300ms delay when clicked */    
+  }
+  /* Remove outline, focus outline, padding, margin and background color of input */
+  input{
+    outline:none;
+    outline-width: 0;
+    border:none;
+    padding:0;
+    margin:0;
+    background-color: transparent;
+  }
+  input:focus{
+    outline:none;
+  }
+  /* Hide image when source is empty. Useful when displaying posts with no user input images */
+  img[src=""]{
+    display: none;
+  }
+
+/* !! Application Layout !! */
+
+/* Remove top margin and setup desktop app structure */
+html body {
+  margin: 0;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+.app{
+  display: flex;
+  flex-direction: row;
+}
+
+/* !! Virtualized scrolling content positioner !! */
+
+/* Position 0px width List container at start of the parent with "align items: center;" */
+@media screen and (min-width: 480px){
+  .Posts_Positioner{
+    display: flex;
+    width: calc(50vw + 130px);
+    max-width: 515px;
+
+    flex-direction: row;
+    align-items: flex-start;
+    overflow: visible;
+  }
+}
+@media screen and (max-width: 480px){
+  .Posts_Positioner{
+    display: flex;
+    width: 100%;  
+    flex-direction: row;
+    align-items: flex-start;
+    overflow: visible;
+  }
+}
+.ReactVirtualized__List{
+  overflow: visible !important;
+}
+.ReactVirtualized__Grid__innerScrollContainer{
+  overflow: visible !important;
+}
+
+
+/* The following styles are not standard and should be moved to individual css modules */
+
+
+
+.loaderWrapper{
+  overflow: visible;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+
+.idle-container{
+  font-family: "Questrial", sans-serif;
+  width: auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.6rem 3rem;
+  border: 3px solid black;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.message {
+  font-size:25px;
+  margin-bottom: 1.6rem;
+  margin-top: 0;
+}
+.btn {
+  color:inherit;
+  font-family:inherit;
+  font-size: 12px;
+  background: white;
+  padding: 0.3rem 3.4rem;
+  border: 3px solid black;
+  margin-right: 2.6rem;
+  box-shadow: 0 0 0 black;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn:last-child {
+  margin: 0;
+}
+
+.btn:hover {
+  box-shadow: 0.4rem 0.4rem 0 black;
+  transform: translate(-0.4rem, -0.4rem);
+}
+
+.btn:active {
+  box-shadow: 0 0 0 black;
+  transform: translate(0, 0);
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.count-down-container{
+  margin-bottom: 20px;
+}
