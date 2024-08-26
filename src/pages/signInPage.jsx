@@ -22,14 +22,13 @@ function SignInSelections(){
             alert(message)
         }
         if(isSuccessful || user){
-            // navigate('/home')
+            navigate('/home')
         }
 
         dispatch(reset());
     }, [user, isError, isSuccessful, message, navigate, dispatch])
     
     const responseSuccessGoogle = async(res) => {
-        console.log(res)
         const code = res.code
         dispatch(googleAuth({code}));
     }
@@ -204,8 +203,6 @@ export function SignUpForm(){
     }, [user, isError, isSuccessful, message, navigate, dispatch])
 
     const submit = () => {
-        // e.preventDefault();
-        // console.log("here")
         if(password !== repeatPassword){
             alert("password do not match")
         }else{

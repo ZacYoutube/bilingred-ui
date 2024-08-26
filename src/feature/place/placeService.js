@@ -20,9 +20,7 @@ const getMyPlaces = async(idList) =>{
 }
 
 const followAPlace = async(data) => {
-
     const user = data.user, placeId = data.placeId;
-    // console.log("in follow", user)
     let followedPlaces = [...user.followedPlaces];
 
     if(!followedPlaces.includes(placeId)){
@@ -49,9 +47,7 @@ const followAPlace = async(data) => {
 }
 
 const unfollowAPlace = async(data) => {
-
     const user = data.user, placeId = data.placeId;
-    // console.log("in unfollow", user)
     let followedPlaces = [...user.followedPlaces];
 
     if(followedPlaces.includes(placeId)){
@@ -81,11 +77,8 @@ const unfollowAPlace = async(data) => {
 // /search/params
 const searchPlaces = async(data) => {
     const query = data.query;
-    console.log('inside search place', query);
-
     const response = await axios.get(PLACE_URL + `/search/params?query=${query}`);
     
-    console.log(response);
     return response;
 }
 

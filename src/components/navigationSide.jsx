@@ -21,9 +21,7 @@ export default function SideNav(props){
         dispatch(reset());
         
     }
-
-    console.log(props)
-
+    
     return(
         <div className={style.content}>
             {

@@ -172,6 +172,7 @@
         margin-right: min(3.2vw,12px);
         border-radius: 12vw;
         overflow: hidden;
+        cursor: pointer;
     }
     .profileImage{
         width: min(10.66vw,40px);
@@ -392,6 +393,7 @@
 	justify-content: center;
 	width: min(5.87vw,22px);
 	height: min(5.87vw,22px);
+  margin-right: 20px;
   }
 .fav_round {
 	position: absolute;

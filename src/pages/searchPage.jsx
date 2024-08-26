@@ -29,7 +29,6 @@ export default function SearchPage(){
     const postSearch = location.state.postSearch;
     const placeSearch = location.state.placeSearch;
 
-    console.log(postSearch, placeSearch)
     useEffect(()=>{
         if(postSearch)
             dispatch(searchPosts({query: searchParams.get('q')}));
@@ -45,7 +44,6 @@ export default function SearchPage(){
             {   
                 setData(postSearchResult)
                 setResultCount(postSearchResult.length)
-                console.log(postSearchResult.length)
                 previousSearchResult.current = postSearchResult
             } 
         }else if(placeSearch){
@@ -54,7 +52,6 @@ export default function SearchPage(){
             {   
                 setData(placeSearchResult)
                 setResultCount(placeSearchResult.length)
-                console.log(placeSearchResult.length)
                 previousPlaceSearchResults.current = placeSearchResult
             } 
         }

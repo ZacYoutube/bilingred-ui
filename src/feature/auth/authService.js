@@ -29,7 +29,6 @@ const login = async(userData) => {
 
 // google auth
 const googleAuth = async(token) => {
-    console.log(token);
     const response = await axios.post(API_URL + '/google/auth', token);
     if(response.data){
         localStorage.setItem('user', JSON.stringify(response.data));

@@ -11,7 +11,6 @@ export default function PlaceCard(props){
         (state) => state.auth
     )
     const follow = () => {
-        console.log(props.placeId)
         if(props && props.placeId){
             const data = {
                 user: user,

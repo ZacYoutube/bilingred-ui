@@ -7,6 +7,7 @@ import emptyUser from "../images/emptyUser.svg";
 import { getMyPost } from "../feature/post/postSlice"
 import { useDispatch, useSelector } from "react-redux"
 import { store } from '../app/store'
+import { useLocation } from "react-router-dom";
 
 
 function UserInfo(props){
@@ -37,40 +38,45 @@ export default function ProfilePage(){
         (state) => state.post
     )
 
+    const location = useLocation();
+    const userState = location?.state;
+
     const dispatch = useDispatch();
     
     useEffect(() => {
         const data = {
             user: user || null,
         }
-        if(user){
-            dispatch(getMyPost(data));
-        }   
-
+        if (user) {
+            if (userState != undefined && userState != null) {
+                dispatch(getMyPost(userState));
+            }
+            else {
+                dispatch(getMyPost(data));
+            }   
+        }
     },[dispatch, user])
-
-    console.log(user);
 
     const fetchWithInWeeks = 2;
     return(
         <div className={style.content}>
             <UserInfo 
-                name={user?.name}
-                description={user?.bio || "This is empty, describe yourself...."}
-                profileImage={user?.profilePictureURL}
+                name={userState?.user?.username || user?.name}
+                description={userState?.user?.bio || user?.bio || "This is empty, describe yourself...."}
+                profileImage={userState?.user?.profilePictureURL || user?.profilePictureURL}
             />
             {
                 myPost?.posts && myPost?.posts.map((item, idx) => {
                     const dataSample = {
-                        profileName : user?.name,
-                        profileImageUrl : user?.profilePictureURL,
+                        profileName : userState?.user ? userState.user.username : user?.name,
+                        profileImageUrl : userState?.user ? userState.user.profilePictureURL : user?.profilePictureURL,
                         title : item.title,
                         text : item.text,
                         image: item.image,
                         createdAt: item.createdAt,
                         at: item.at,
                         post: item,
-                        user: user || null
+                        user: userState?.user || user || null
                     }
 
                     return (

@@ -16,11 +16,19 @@ export default function PlaceExplorePage(){
     const { placeList } = useSelector(
         (state) => state.place
     )
-    useEffect(()=>{
-        dispatch(getPlace());
-        setStatePlaceList(placeList.place);
-    }, [placeList, dispatch]);
 
+    useEffect(() => {
+        dispatch(getPlace());
+    }, [dispatch]);
+    
+    useEffect(() => {
+        if (placeList.place) {
+            setStatePlaceList(placeList.place);
+        }
+    }, [placeList.place]);
+    
+
+    
     return(
         <div className={style.content}>
             <SearchPlace />

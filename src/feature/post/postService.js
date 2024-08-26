@@ -5,9 +5,9 @@ const USER_URL = `${process.env.REACT_APP_API_URL}/user`;
 const POST_URL = `${process.env.REACT_APP_API_URL}/post`;
 
 // get user's posts
-const getMyPost = async(data) => {
+const getMyPost = async(data) => {   
     const user = data.user;
-    
+
     const config = {
         headers: { Authorization: `Bearer ${user.token}` }
     };
@@ -18,7 +18,6 @@ const getMyPost = async(data) => {
     },
         config
     )
-    console.log(response);
     
     return response.data;
 }
@@ -79,7 +78,6 @@ const postContent = async(data) => {
           at = data.at,
           html = data.html;
 
-          console.log(data)
     const config = {
         headers: { Authorization: `Bearer ${user.token}` }
     };
@@ -99,9 +97,7 @@ const postContent = async(data) => {
 }
 
 const starAPost = async(data) => {
-
     const user = data.user, postId = data.postId;
-    // console.log("in star", user)
     let favoritePostList = [...user.favoritePostList];
 
     if(!favoritePostList.includes(postId)){
@@ -128,9 +124,7 @@ const starAPost = async(data) => {
 }
 
 const unstarAPost = async(data) => {
-
     const user = data.user, postId = data.postId;
-    // console.log("unstar", user)
     let favoritePostList = [...user.favoritePostList];
 
     if(favoritePostList.includes(postId)){
@@ -166,13 +160,11 @@ const getStarredPosts = async(data) => {
     const response = await axios.post(POST_URL + '/starred', {
         isGoogle: user.isGoogle
     },config);
-    // console.log(response)
     return response.data;
 }
 
 
 const updatePost = async(data) => {
-    console.log(data)
     const post = data.post;
     const user = data.user;
     const config = {
@@ -186,17 +178,13 @@ const updatePost = async(data) => {
         html: post.html
     },
     config);
-    console.log(response);
     return response;
 }
 
 const searchPosts = async(data) => {
     const query = data.query;
-    console.log('inside search post', query);
-
     const response = await axios.get(POST_URL + `/search?query=${query}`);
     
-    console.log(response);
     return response;
 }
 

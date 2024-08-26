@@ -54,7 +54,6 @@ export function ImagePosts(){
                 }
                 
                 dispatch(getAllPosts(data)).then((res)=>{
-                    console.log(res);
                     resolve(res.payload.data.data)
                 })
 
