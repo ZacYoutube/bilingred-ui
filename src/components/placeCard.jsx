@@ -6,10 +6,12 @@ import { getMyPlaces } from "../feature/place/placeSlice";
 import { useEffect } from "react";
 
 export default function PlaceCard(props){
+    console.log(props);
     const dispatch = useDispatch()
-    const { user, isLoading, isError, isSuccessful, message } = useSelector(
+    const { user } = useSelector(
         (state) => state.auth
     )
+    const GOOGLE_MAP_URL = "https://www.google.com/maps/search/?api=1&query=";
     const follow = () => {
         if(props && props.placeId){
             const data = {
@@ -66,7 +68,7 @@ export default function PlaceCard(props){
                     </div>
                 }
                 
-                <div className={style.mapButton}>
+                <div className={style.mapButton} onClick={()=>{window.open(`${GOOGLE_MAP_URL} + ${props.location}`)}}>
                     地图查看
                 </div>
             </div>

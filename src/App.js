@@ -21,11 +21,13 @@ import { useIdleTimer } from 'react-idle-timer'
 import { confirmAlert } from 'react-confirm-alert'; // Import
 import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
 import Countdown from 'react-countdown';
+import LogoutPage from "./pages/logoutPage";
+import PostDetailsPage from "./pages/postDetails";
 
 function App() {
 
   const [ userInfo, setUserInfo ] = useState(null);
-  const { user, isLoading, isError, isSuccessful, message, isGoogle } = useSelector(
+  const { user, isGoogle } = useSelector(
       (state) => state.auth
   )
 
@@ -107,7 +109,7 @@ function App() {
           <>
             <SideNav userInfo={userInfo} isGoogle={isGoogle} />
             <Outlet/>
-            <BottomNav/>
+            <BottomNav />
           </>
         }>
           <Route path="/places" element={<PlaceExplorePage/>}/>
@@ -116,6 +118,8 @@ function App() {
           <Route path="/myPlaces" element={<FollowedPlacesPage/>}/>
           <Route path="/collection" element={<CollectionPage/>}/>
           <Route path="/search" element={<SearchPage />}/>
+          <Route path="/detail" element={<PostDetailsPage />}/>
+          <Route path="/logout" element={<LogoutPage isGoogle={isGoogle} />} />
         </Route>
 
         <Route element={

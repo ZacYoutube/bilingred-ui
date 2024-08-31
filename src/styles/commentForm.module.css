@@ -1,0 +1,73 @@
+/* Main form container */
+.commentFormContainer {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Form styling */
+.commentFormContainer form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Textarea styling */
+.commentFormTextarea {
+    width: 100%;
+    min-height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+.commentFormTextarea:focus {
+    border-color: #007bff;
+}
+
+/* Submit button styling */
+.commentFormButton {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.commentFormButton:hover {
+    background-color: #0056b3;
+}
+
+.commentFormButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Cancel button styling */
+.commentFormContainer button[type="button"] {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.commentFormContainer button[type="button"]:hover {
+    background-color: #c0c0c0;
+}

@@ -1,0 +1,55 @@
+/* Comments section */
+.contentWrapper {
+    border-radius: 8px;
+}
+
+.comments {
+    margin-bottom: 20px;
+}
+
+.commentsTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Comment form styling */
+.commentForm {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.commentFormTitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Comments container */
+.commentsContainer {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+/* Individual comment wrapper */
+.commentWrapper {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Lazy loading suggestion comment */
+.commentWrapper::before {
+    content: "Lazy loading enabled for replies";
+    font-size: 12px;
+    color: #888;
+    display: block;
+    margin-bottom: 5px;
+    display: none; /* Only show if lazy loading is implemented */
+}

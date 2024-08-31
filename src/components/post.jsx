@@ -78,6 +78,10 @@ export default function ImagePost(props){
         return pstDate;
     }
 
+    function viewPost() {
+        navigate("/detail", { state: props });
+    }
+
     function deleteClick(){
         setDisplayDeleteWindow(true);
     }
@@ -199,38 +203,40 @@ export default function ImagePost(props){
                         </div>
                     </div>
                 </div>
-                <div className = {style.title}>
-                    {
-                        extractTags(props.title)?.tagsArray.map((tag)=>{
-                            return <span key = {tag} style={{color: "#4FAEF9"}}>{tag} &nbsp;</span>
-                        })
-                    
-                    }
-                    <span>{extractTags(props.title)?.title}</span>
-
-                </div>
-                <div ref={quillText} className = {style.text}>
-                    {/* {props.text} */}
-                </div>
-                <div className = {style.displayImageWrapper}>
-                    <img src = {props.image[0] || ""} className = {style.displayImage1} 
-                    onLoad=
-                    {
-                        (evt)=>{
-                            evt.target.className=`${style.displayImageAppear1}`
+                <div className={style.postContentWrapper} onClick = {()=>viewPost()}>
+                    <div className = {style.title}>
+                        {
+                            extractTags(props.title)?.tagsArray.map((tag)=>{
+                                return <span key = {tag} style={{color: "#4FAEF9"}}>{tag} &nbsp;</span>
+                            })
+                        
                         }
-                    } alt=""/>
+                        <span>{extractTags(props.title)?.title}</span>
 
-                    <img src = {props.image[1] || ""} className = {style.displayImage2} 
-                    onLoad=
-                    {
-                        (evt)=>{
-                            evt.target.className=`${style.displayImageAppear2}`
-                        }
-                    
-                    } alt=""/>
+                    </div>
+                    <div ref={quillText} className = {style.text}>
+                        {/* {props.text} */}
+                    </div>
+                    <div className = {style.displayImageWrapper}>
+                        <img src = {props.image[0] || ""} className = {style.displayImage1} 
+                        onLoad=
+                        {
+                            (evt)=>{
+                                evt.target.className=`${style.displayImageAppear1}`
+                            }
+                        } alt=""/>
 
-                </div>      
+                        <img src = {props.image[1] || ""} className = {style.displayImage2} 
+                        onLoad=
+                        {
+                            (evt)=>{
+                                evt.target.className=`${style.displayImageAppear2}`
+                            }
+                        
+                        } alt=""/>
+
+                    </div> 
+                </div>     
             </div>
         </div>
     )

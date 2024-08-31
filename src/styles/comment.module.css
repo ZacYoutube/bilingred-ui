@@ -1,0 +1,125 @@
+/* Main comment container */
+.comment {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+}
+
+.comment:hover {
+    background-color: #f7f7f7;
+}
+
+/* Image container */
+.commentImageContainer {
+    margin-right: 15px;
+}
+
+.commentImageContainer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+/* Right part of the comment containing text and actions */
+.commentRightPart {
+    flex: 1;
+}
+
+/* Comment content */
+.commentContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.commentAuthor {
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+.commentContent > div {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Comment text */
+.commentText {
+    margin-bottom: 10px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* Comment actions */
+.commentActions {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.commentAction {
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.commentAction:hover {
+    color: #0056b3;
+}
+
+/* Comment replies */
+.commentReplies {
+    margin-top: 15px;
+    padding-left: 20px;
+    border-left: 2px solid #e0e0e0;
+}
+
+/* Form styles inside the comment section */
+.commentForm {
+    margin-bottom: 10px;
+}
+
+/* Edit and reply form container */
+.commentFormContainer {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+.commentForm .submitButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.commentForm .submitButton:hover {
+    background-color: #0056b3;
+}
+
+.commentForm .cancelButton {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.commentForm .cancelButton:hover {
+    background-color: #c0c0c0;
+}

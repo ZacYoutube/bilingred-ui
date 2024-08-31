@@ -95,6 +95,7 @@
         color:#404040;
         border: min(0.3vw,1.2px) solid #404040;
         border-radius: min(0.8vw,3.2px);
+        cursor: pointer;
     }
 }
 
@@ -162,5 +163,6 @@
         color:#404040;
         border: min(0.3vw,1.2px) solid #404040;
         border-radius: min(0.8vw,3.2px);
+        cursor: pointer;
     }
 }
